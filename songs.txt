@@ -1,0 +1,4 @@
+Beyonce|Halo|google.com/https://www.youtube.com/watch?v=bnVUHWCynig
+Taylor Swift|Shake It Off|https://www.youtube.com/watch?v=nfWlot6h_JM
+John Legend|All Of Me|https://www.youtube.com/watch?v=450p7goxZqg
+John Legend|You & I|https://www.youtube.com/watch?v=Pi3bc9lS3rg

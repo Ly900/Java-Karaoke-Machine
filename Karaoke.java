@@ -1,23 +1,16 @@
+import com.lynguyen.KaraokeMachine;
 import com.lynguyen.model.Song;
 import com.lynguyen.model.SongBook;
 
 public class Karaoke {
 
   public static void main(String[] args) {
-
-    Song song = new Song(
-      "Michael Jackson",
-      "Beat It",
-      "https://youtu.be/Ym0hZG-zNOk"
-    );
-
     SongBook songBook = new SongBook();
-    System.out.printf("Adding %s\n", song);
-
-    songBook.addSong(song);
-
-    System.out.printf("There are %d songs.", songBook.getSongCount());
-
+    songBook.importFrom("songs.txt");
+    KaraokeMachine machine = new KaraokeMachine(songBook);
+    machine.run();
+    System.out.println("Saving book...");
+    songBook.exportTo("songs.txt");
   }
 
 }
